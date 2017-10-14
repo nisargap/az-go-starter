@@ -46,7 +46,7 @@ func GetConfig(filename string) models.Config {
 
 // Given a filename for the configuration such as config.json
 // This function sets up cors using the default config and
-// allows all origins, serves up the clientcerts directory as static
+// allows all origins
 // Sets the database session in the gin config, adds the JWT middleware
 // to gin and sets up the routes with the correct API version.
 // The routes are split up into two sections those that using the authentication
