@@ -74,6 +74,8 @@ func SetupRouter(filename string) *gin.Engine {
 	v1 := r.Group("/api/v1")
 	{
 		v1.GET("/", routes.MainRoute)
+		v1.POST("/login", authMiddleware.LoginHandler)
+		v1.POST("/signup", routes.SignUp)
 	}
 	v1.Use(authMiddleware.MiddlewareFunc())
 	{
