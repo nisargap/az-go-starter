@@ -1,0 +1,7 @@
+{
+		"port": "8080",
+		"database_name": "test_db",
+		"database_url": "mongodb://localhost:27017",
+		"hostname": "localhost",
+		"domain": "localhost"
+}
